@@ -1,9 +1,18 @@
 div.user_bio {
   min-height: 7rem;
+  padding: 0 0 10px 10px;
 }
 
 div.user_post_like_comment {
   align-self: flex-end;
+}
+
+.btn_all_posts {
+  display: flex;
+}
+
+.btn_all_posts a {
+  margin: auto;
 }
 
 #btn_pagination {
