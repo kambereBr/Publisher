@@ -33,15 +33,12 @@ a {
   padding: 0 0 10px 10px;
 }
 
-
 ul#users_list,
 div#post_container {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   row-gap: 0.2rem;
-
-  /* border: solid #000 0.05rem; */
   padding: 0 0 10px 10px;
 }
 
