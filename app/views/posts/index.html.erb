@@ -5,7 +5,7 @@
   <%if @posts.present?%>
     <ul id='users_list'>
       <% @posts.each_with_index do |post, index| %>
-        <li>
+        <li class="all_user_post">
           <%= render partial: "partials/post_item", locals: { post: post, index:index } %>
           <%comments=post.five_recent_comments%>
           <%= render partial: "partials/comments_list", locals: { comments: comments} %>
@@ -16,5 +16,7 @@
     <%='No post'%>
   <%end%>
   </div>
-  <button id='btn_pagination'>Pagination</button>
+  <div class="pagination">
+    <button id='btn_pagination'>Pagination</button>
+  </div>
 </div>

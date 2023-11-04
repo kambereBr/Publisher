@@ -23,20 +23,36 @@ p {
   line-height: 150%;
 }
 
+a {
+  text-decoration: none;
+}
+
+.li_user_post_item,
+.all_user_post {
+  border: solid #000 0.05rem;
+  padding: 0 0 10px 10px;
+}
+
 ul#users_list,
 div#post_container {
   list-style-type: none;
   display: flex;
   flex-direction: column;
   row-gap: 0.2rem;
+  padding: 0 0 10px 10px;
 }
 
-ul#users_list li,
-.user_item,
 .user_bio,
 .post_text,
+.btn_all_posts a,
 .comment_item {
   border: solid #000 0.05rem;
+  padding: 2px;
+}
+
+.user_img,
+.user_details {
+  border: solid #000 0.2rem;
 }
 
 ul.comment_list {
@@ -45,7 +61,8 @@ ul.comment_list {
 
 div.user_item {
   display: flex;
-  column-gap: 0.5rem;
+  column-gap: 0.7rem;
+  margin-bottom: 10px;
 }
 
 div.user_details {
@@ -55,9 +72,11 @@ div.user_details {
 div.user_details p {
   font-size: xxx-large;
   padding: 0;
+  padding-left: 10px;
   margin: 0;
 }
 
-div.user_details span {
-  margin-left: 70%;
+div.user_details span,
+.user_post_reactions {
+  margin-left: 90%;
 }
