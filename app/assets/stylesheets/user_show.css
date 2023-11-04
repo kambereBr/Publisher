@@ -1,0 +1,22 @@
+div.user_bio {
+  min-height: 7rem;
+}
+
+div.user_post_like_comment {
+  align-self: flex-end;
+}
+
+#btn_pagination {
+  margin: 0 47%;
+}
+
+div.user_posts {
+  display: flex;
+  flex-direction: column;
+}
+
+div.user_post_text {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+}
