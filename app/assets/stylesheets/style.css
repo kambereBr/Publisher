@@ -42,12 +42,36 @@ div#post_container {
   padding: 0 0 10px 10px;
 }
 
+.comment_item {
+  margin-bottom: 5px !important;
+  margin-right: 5px;
+}
+
 .user_bio,
 .post_text,
 .btn_all_posts a,
-.comment_item {
+.add_post_btn .comment_item {
   border: solid #000 0.05rem;
   padding: 2px;
+}
+
+.add_post_btn {
+  width: 4%;
+  border: solid #000 0.05rem;
+  margin-top: 5px;
+  padding: 2px;
+}
+
+.post_comments {
+  margin-top: 5px;
+}
+
+.new_post_container {
+  width: 40%;
+  margin: auto;
+  border: solid #000 0.05rem;
+  text-align: center;
+  padding: 5px;
 }
 
 .user_img,
