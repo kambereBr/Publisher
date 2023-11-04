@@ -1,3 +1,6 @@
+<% flash.each do |type, message| %>
+  <div class="alert alert-<%= type %>"><%= message %></div>
+<% end %>
 <div id="post_container">
   <div class='user_post_like_comment'>
       <span>Comment: <%=@post.comments_counter%>, </span>
@@ -8,6 +11,12 @@
      <%=@post.title%>
    </h3>
     <%= @post.text %>
+  </div>
+  <div id='add_like'>
+    <%=button_to 'Like', user_post_likes_path(@current_user.id, @post), method: :post %>
+  </div>
+  <div id='add_comment'>
+    <%= render 'comments/new' %>
   </div>
   <%= render partial: "partials/comments_list", locals: { comments: @comments} %>
 </div>
