@@ -27,11 +27,12 @@ a {
   text-decoration: none;
 }
 
-.li_user_post_item, .all_user_post {
+.li_user_post_item,
+.all_user_post {
   border: solid #000 0.05rem;
   padding: 0 0 10px 10px;
 }
- 
+
 
 ul#users_list,
 div#post_container {
@@ -39,6 +40,7 @@ div#post_container {
   display: flex;
   flex-direction: column;
   row-gap: 0.2rem;
+
   /* border: solid #000 0.05rem; */
   padding: 0 0 10px 10px;
 }
@@ -81,4 +83,3 @@ div.user_details span,
 .user_post_reactions {
   margin-left: 90%;
 }
-
