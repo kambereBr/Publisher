@@ -1,5 +1,6 @@
 require 'rails_helper'
 require 'data/my_data'
+require 'capybara'
 
 RSpec.describe 'User show page', type: :feature do
   include FakerData
@@ -8,6 +9,11 @@ RSpec.describe 'User show page', type: :feature do
   end
   before do
     visit user_path(@user1)
+  end
+
+  let!(:post11) do
+    Post.create(id: 77, title: 'This is my Post Number 11', text: 'My post', author_id: @user1.id, comments_counter: 0,
+                likes_counter: 0)
   end
 
   it 'displays the user\'s profile picture' do
@@ -35,6 +41,12 @@ RSpec.describe 'User show page', type: :feature do
 
   it "displays a button to view all of a user's posts" do
     expect(page).to have_link('See all posts', href: user_posts_path(@user1))
+  end
+
+  it 'redirects to a user\'s post show page when clicking on a users post' do
+    visit user_path(@user1)
+    click_link 'This is my Post Number 11'
+    expect(current_path).to eq(user_post_path(@user1, post11))
   end
 
   it 'redirects to the user post index page when clicking on "See all posts"' do
