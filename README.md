@@ -126,6 +126,11 @@ You can deploy this project using: GitHub Pages Netifly or Render
 - Twitter: [@kambereBr](https://twitter.com/kambereBr)
 - LinkedIn: [bruno kambere](https://www.linkedin.com/in/bruno-kambere/)
 
+👤 **Mohammad Anwar Hussaini**
+
+- GitHub: [@M-Anwar-Hussaini](https://github.com/M-Anwar-Hussaini/)
+- LinkedIn: [Anwar Hussaini](https://www.linkedin.com/in/anwar-hussaini/)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
