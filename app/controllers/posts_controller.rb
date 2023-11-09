@@ -14,7 +14,7 @@ class PostsController < ApplicationController
 
   def new
     if user_signed_in?
-       @user = current_user
+      @user = current_user
       @post = @user.posts.new
       respond_to do |format|
         format.html { render :new, locals: { post: @post } }
