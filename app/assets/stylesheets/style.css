@@ -104,3 +104,15 @@ div.user_details span,
 .user_post_reactions {
   margin-left: 90%;
 }
+
+.authentication-form {
+  margin: 0 auto;
+  width: 30%;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid;
+}
+
+.actions {
+  margin: 3px 0 3px 0;
+}

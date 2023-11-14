@@ -15,7 +15,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  database: blog
+  database: blogss
   username: postgres
   password: 123456789
   # For details on connection pooling, see Rails configuration guide
@@ -60,7 +60,7 @@ test:
   <<: *default
   adapter: postgresql
   encoding: unicode
-  database: blog
+  database: blogss
   username: postgres
   password: 123456789
 
